@@ -1,0 +1,56 @@
+.index-pg .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 768px) {
+  .index-pg .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .index-pg .container {
+    padding: 10px;
+  }
+}
+.index-pg .left {
+  width: 98%;
+}
+.index-pg .left img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+.index-pg .form {
+  width: 98%;
+  padding: 50px;
+
+  background: var(--form-bg);
+}
+.index-pg .form input[type="text"],
+.index-pg .form input[type="password"] {
+  width: 100%;
+  border-radius: var(--border-raduis-md);
+}
+@media (max-width: 768px) {
+  .index-pg .form {
+    margin-top: 30px;
+    padding: 0;
+    background: transparent;
+  }
+}
+.index-pg .form input[type="submit"] {
+  color: var(--color-white);
+  border-radius: var(--border-raduis-sm);
+}
+.index-pg .no-account a {
+  background: inherit;
+  color: var(--btn-bg);
+  margin: 0;
+  padding: 0;
+  padding-left: 6px;
+}
+.index-pg .no-account a:hover {
+  color: var(--btn-bg--hover);
+}

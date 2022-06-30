@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/imgs/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Books gate</title>
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="index-pg">
+    <header class="text-center py-10">
+      <h1>
+        Find the books you want at the
+        <span class="text-gray-700 font-semibold">Books' Corner</span>
+      </h1>
+    </header>
+
+    <div class="container p-20 mx-auto">
+      <div class="left">
+        <img
+          src="./assets/imgs/pics/bookshelf.jpg"
+          width="500px"
+          alt="bookshelf"
+        />
+      </div>
+      <form
+        method="POST"
+        class="flex justify-center flex-col items-center form"
+      >
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+        />
+        <input
+          type="password"
+          name="pwd"
+          id="pwd"
+          placeholder="Password"
+          class="mt-5"
+        />
+        <input type="submit" value="Login" role="button" class="mt-5" />
+        <div class="mt-6 no-account">
+          <span class="text-red-900">Have no account yet?</span
+          ><a href="./process/register.html">Signup</a>
+        </div>
+      </form>
+    </div>
+
+    <!-- Own JS -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

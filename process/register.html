@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./../assets/imgs/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Register</title>
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="register-pg">
+    <form class="reg-form" method="POST">
+      <header>
+        <h2 class="text-center font-semibold bg-orange-900 text-white py-3">
+          Create an account
+        </h2>
+      </header>
+      <div class="form-control">
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+        />
+      </div>
+      <div class="form-control">
+        <input type="text" name="email" id="email" placeholder="E-mail" />
+      </div>
+      <div class="form-control">
+        <input
+          type="text"
+          name="conf-email"
+          id="conf-email"
+          placeholder="Confirm E-mail"
+        />
+      </div>
+      <div class="form-control">
+        <input type="password" name="pwd" id="pwd" placeholder="Password" />
+      </div>
+      <div class="form-control">
+        <input
+          type="text"
+          name="conf-pwd"
+          id="conf-pwd"
+          placeholder="Confirm password"
+        />
+      </div>
+      <div class="form-control">
+        <input type="submit" id="reg-submit-btn" value="Register" />
+      </div>
+      <div class="mt-6 have-account">
+        <span class="text-red-900">Have already an account? </span
+        ><a href="./../index.html">Login</a>
+      </div>
+    </form>
+  </body>
+</html>

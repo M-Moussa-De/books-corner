@@ -1,0 +1,49 @@
+/* Background Image */
+.register-pg {
+  background: url("../imgs/pics/bookshelf.jpg") center center / cover no-repeat;
+}
+
+.register-pg .reg-form {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 30px;
+
+  background: var(--form-bg);
+}
+@media (max-width: 1200px) {
+  .register-pg .reg-form {
+    width: 98%;
+  }
+}
+@media (max-width: 768px) {
+  .register-pg .reg-form {
+    padding: 10px;
+  }
+}
+.register-pg .reg-form .form-control > input:not(input[type="submit"]) {
+  width: 100%;
+}
+.register-pg .reg-form .form-control > input {
+  margin-top: 30px;
+  border-radius: var(--border-raduis-md);
+}
+.register-pg .reg-form .form-control input[type="submit"] {
+  margin-top: 10px;
+  float: right;
+  clear: both;
+  color: var(--color-white);
+}
+
+.register-pg .have-account a {
+  background: inherit;
+  color: var(--btn-bg);
+  margin: 0;
+  padding: 0;
+  padding-left: 6px;
+}
+.register-pg .have-account a:hover {
+  color: var(--btn-bg--hover);
+}
