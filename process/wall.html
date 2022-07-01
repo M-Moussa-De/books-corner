@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./../assets/imgs/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Books gate</title>
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="wall-pg">
+    <div class="bg-gray-100 py-5">
+      <header class="container flex justify-between mx-auto">
+        <h3>Welcome <span class="text-red-500 font-bold">user</span></h3>
+        <img src="./../assets/imgs/icons/logout.svg" alt="logout" />
+      </header>
+    </div>
+
+    <!-- main -->
+    <main>
+      <div class="flex">
+        <aside class="pt-8">
+          <form class="search">
+            <input type="text" placeholder="Search..." />
+          </form>
+          <ul>
+            <li><a href="#">Newest</a></li>
+            <li><a href="#">Book series</a></li>
+            <li><a href="#">Favorit</a></li>
+            <li><a href="#">History</a></li>
+          </ul>
+          <div class="filter flex flex-col justify-center items-center mt-12">
+            <form>
+              <!-- Age -->
+              <div class="age flex flex-col">
+                <span class="block font-semibold">Age:</span>
+                <label for="kids">
+                  <input type="checkbox" name="" id="kids" /> Kids
+                </label>
+                <label for="young">
+                  <input type="checkbox" name="" id="young" /> Young
+                </label>
+                <label for="adults">
+                  <input type="checkbox" name="" id="adults" /> Adults
+                </label>
+              </div>
+              <!-- Topics -->
+              <div class="cat flex flex-col mt-5">
+                <span class="block font-semibold">Topics & Subjects</span>
+                <label for="advan">
+                  <input type="checkbox" id="advan" /> Advanture
+                </label>
+                <label for="fict">
+                  <input type="checkbox" id="fict" /> Fiction
+                </label>
+                <label for="fantasy">
+                  <input type="checkbox" id="fantasy" /> Fantasy
+                </label>
+                <label for="sci-fic">
+                  <input type="checkbox" id="sci-fic" /> Sci-Fic
+                </label>
+                <label for="thriller">
+                  <input type="checkbox" id="thriller" /> Thriller
+                </label>
+              </div>
+              <!-- Year -->
+              <div class="cat flex flex-col mt-5">
+                <span class="block font-semibold">Year</span>
+                <label for="up2020">
+                  <input type="checkbox" id="up2020" /> 2020 & more
+                </label>
+                <label for="2010-2020">
+                  <input type="checkbox" id="2010-2020" /> 2010-2020
+                </label>
+                <label for="2000-2010">
+                  <input type="checkbox" id="2000-2010" /> 2000-2010
+                </label>
+                <label for="before2000">
+                  <input type="checkbox" id="before2000" /> Before 2000
+                </label>
+              </div>
+            </form>
+          </div>
+        </aside>
+
+        <section class="books pt-16 px-10">
+          <div class="row flex flex-wrap justify-center">
+            <!-- Book 1 -->
+            <div class="col">
+              <a href="#">
+                <div class="book">
+                  <img
+                    src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt=""
+                  />
+                  <div class="flex justify-between items-center px-5">
+                    <h3>book title</h3>
+                    <div class="details flex justify-center items-center">
+                      <div
+                        class="seen flex flex-col justify-center items-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                          />
+                        </svg>
+                        <span class="text-gray-500">10</span>
+                      </div>
+                      <div class="star">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                          />
+                        </svg>
+                        <span class="text-gray-500">18</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- End Book 1 -->
+
+            <!-- Book 2 -->
+            <div class="col">
+              <a href="#">
+                <div class="book">
+                  <img
+                    src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt=""
+                  />
+                  <div class="flex justify-between items-center px-5">
+                    <h3>book title</h3>
+                    <div class="details flex justify-center items-center">
+                      <div
+                        class="seen flex flex-col justify-center items-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                          />
+                        </svg>
+                        <span class="text-gray-500">10</span>
+                      </div>
+                      <div class="star">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                          />
+                        </svg>
+                        <span class="text-gray-500">18</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- End Book 2 -->
+
+            <!-- Book 3 -->
+            <div class="col">
+              <a href="#">
+                <div class="book">
+                  <img
+                    src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt=""
+                  />
+                  <div class="flex justify-between items-center px-5">
+                    <h3>book title</h3>
+                    <div class="details flex justify-center items-center">
+                      <div
+                        class="seen flex flex-col justify-center items-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                          />
+                        </svg>
+                        <span class="text-gray-500">10</span>
+                      </div>
+                      <div class="star">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                          />
+                        </svg>
+                        <span class="text-gray-500">18</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- End Book 3 -->
+
+            <!-- Book 4 -->
+            <div class="col">
+              <a href="#">
+                <div class="book">
+                  <img
+                    src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt=""
+                  />
+                  <div class="flex justify-between items-center px-5">
+                    <h3>book title</h3>
+                    <div class="details flex justify-center items-center">
+                      <div
+                        class="seen flex flex-col justify-center items-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                          />
+                        </svg>
+                        <span class="text-gray-500">10</span>
+                      </div>
+                      <div class="star">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                          />
+                        </svg>
+                        <span class="text-gray-500">18</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- End Book 4 -->
+
+            <!-- Book 5 -->
+            <div class="col">
+              <a href="#">
+                <div class="book">
+                  <img
+                    src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt=""
+                  />
+                  <div class="flex justify-between items-center px-5">
+                    <h3>book title</h3>
+                    <div class="details flex justify-center items-center">
+                      <div
+                        class="seen flex flex-col justify-center items-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                          />
+                        </svg>
+                        <span class="text-gray-500">10</span>
+                      </div>
+                      <div class="star">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                          />
+                        </svg>
+                        <span class="text-gray-500">18</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- End Book 5 -->
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

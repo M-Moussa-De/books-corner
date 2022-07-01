@@ -12,6 +12,7 @@
   padding: 30px;
 
   background: var(--form-bg);
+  border-radius: var(--border-raduis-md);
 }
 @media (max-width: 1200px) {
   .register-pg .reg-form {
@@ -22,6 +23,10 @@
   .register-pg .reg-form {
     padding: 10px;
   }
+}
+
+.register-pg .reg-form header h2 {
+  border-radius: var(--border-raduis-md);
 }
 .register-pg .reg-form .form-control > input:not(input[type="submit"]) {
   width: 100%;
